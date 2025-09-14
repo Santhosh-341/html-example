@@ -2,38 +2,175 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="my cool resume created by html using " />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>practice</title>
-    <!-- <link rel="stylesheet" href="text.css" /> -->
+    <title>Document</title>
     <style>
       body {
-        background-color: black;
+        background-color: linear-gradient(to right, red, green);
+        /* background-color: lineal-gradient(to right, #190f02 0%, #ff6531 100%); */
+        font-family: Arial, Helvetica, sans-serif;
         color: white;
       }
-      .img {
-        position: relative;
-        top: 400px;
-        height: 100px;
+      .sant {
+        float: right;
+        gap: 30px;
       }
-      .san {
-        width: 200px;
-        display: flex;
-        gap: 20px;
-        position: relative;
-        top: 20px;
-        left: 400px;
+      .nav a {
+        border: 10px solid red;
+        border-radius: 30%;
+        padding: ;
+        color: aqua;
       }
-      .sank {
-        width: 1000px;
-        width: 500px;
+      .nav {
+        color: aqua;
+        display: inline;
+        background-color: rgb(179, 179, 179);
+        padding: 10px;
       }
     </style>
   </head>
+
   <body>
-    <h1>this is santhosh</h1>
-    <div class="img">
-      <img class="san" src="santhosh photo.png" alt="" />
-      <img class="sank" src="divya santhu.jpg" alt="" />
-    </div>
+    <header>
+      <div class="nav">
+        <ul>
+          <li>
+            <p><a href="#edu">education</a></p>
+          </li>
+          <li>
+            <p><a href="#pro">projects</a></p>
+          </li>
+          <li>
+            <p><a href="#contact">contact me</a></p>
+          </li>
+        </ul>
+      </div>
+      <img
+        height="300"
+        width="300"
+        src="santhosh photo.png"
+        alt="santhosh photo"
+      />
+      <div class="sant">
+        <h1>Santhosh Kumar Reddy</h1>
+        <p>
+          <i
+            >Studying B.tech 2<sup>nd </sup>year at the Gudur in Audisankara
+            College of engineering and technology
+          </i>
+        </p>
+        <p>
+          I ❤ love the Web Development and Here providing the my all information
+        </p>
+      </div>
+    </header>
+    <hr />
+    <main>
+      <section>
+        <h2 id="edu">Education</h2>
+        <table border="2">
+          <tr>
+            <th>course</th>
+            <th>Institute</th>
+            <th>Year</th>
+            <th>result</th>
+          </tr>
+          <tr>
+            <td>B.tech <br />CSE</td>
+            <td>
+              <a href="https://www.audisankara.ac.in/" target="blank"
+                >Audisankara college</a
+              >
+            </td>
+            <td>2027</td>
+            <td>80.67%</td>
+          </tr>
+          <tr>
+            <td>12<sup>th</sup>Grade</td>
+            <td>Sri Gayathri junior college</td>
+            <td>2022</td>
+            <td>75.60%</td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>Internships</h2>
+        <article>
+          <p><i>Web Development</i></p>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+              non soluta vitae, suscipit consequuntur debitis alias omnis sit
+              vel ipsum doloribus accusantium qui dolorum harum nesciunt totam
+              numquam tempora neque repudiandae aperiam perferendis? Voluptatum
+              consectetur ea, facilis quo quibusdam, impedit magni nam incidunt
+              eligendi vitae ullam dolore placeat labore dignissimos.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+              recusandae! Ullam ipsam libero voluptates nostrum qui? Ipsa,
+              libero ad quos facere laboriosam dolores praesentium officia
+              numquam accusamus! Natus ex porro nemo ipsum numquam saepe
+              architecto consectetur magni, ea eveniet tempora eligendi.
+              Ducimus, deleniti quas! Magnam quae voluptatum natus obcaecati
+              velit exercitationem fugit inventore in! Incidunt culpa ex amet
+              minus eum.
+            </li>
+          </ul>
+        </article>
+        <h2 id="pro">Projects</h2>
+        <ul>
+          <article>
+            <li><b>calculater using html &css</b></li>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. At qui
+              ab fugit suscipit nesciunt fugiat perspiciatis corrupti molestiae,
+              minus porro, nemo voluptatibus doloribus. Amet numquam et
+              doloribus doloremque. Rerum, tempore.
+            </p>
+          </article>
+          <article>
+            <li><b>Personal web site using html & css</b></li>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium nesciunt, voluptatem consectetur in dolorum
+              doloremque? Praesentium sapiente dolore eos amet, blanditiis
+              quibusdam aspernatur dolorum corporis consequuntur veritatis nam
+              omnis excepturi aperiam, voluptatum in quas! Quod culpa voluptatum
+              ipsa sunt maiores.
+            </p>
+          </article>
+          <article>
+            <li><b>youtube clone</b></li>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              minus ducimus magni eveniet, sed mollitia dolor, obcaecati
+              accusamus quia nesciunt praesentium odio? Recusandae numquam
+              exercitationem molestias beatae? Minus maiores distinctio magni
+              iure natus corporis sit accusamus nulla ad, impedit ut?
+            </p>
+          </article>
+        </ul>
+      </section>
+    </main>
+    <aside></aside>
+
+    <hr />
+
+    <footer>
+      <h2 id="contact">Contact with me</h2>
+      <p>
+        Email: <a style="color: red" href="mailto:">sr7780497986@gmail.com</a>
+      </p>
+      <p>instagram: santhosh_reddy_94</p>
+      <p>contact number: <a href="tel:+917780497986">7780497986</a></p>
+    </footer>
+    <h4>
+      <a href="C:\Users\sh\OneDrive\Desktop\bestie/aboutus.html">aboutus</a>
+    </h4>
+    <br /><br />
+    <a href="#">back to top</a>
   </body>
 </html>

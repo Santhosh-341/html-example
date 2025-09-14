@@ -5,137 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-      }
-      header {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 0;
-        text-align: center;
-      }
-      .navbar {
-        color: #fff;
-        display: flex;
-        gap: 20px;
-        justify-content: space-evenly;
-        text-decoration: none;
-        margin: 0 15px;
-        padding: 10px 15px;
-        background-color: #444;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-        border-radius: 5px;
-      }
-      main {
-        padding: 20px;
-      }
-      section {
-        margin-bottom: 40px;
-      }
-      footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-      }
-      img {
-        max-width: 200px;
-        height: auto;
-        border-radius: 50%;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-      th,
-      td {
-        padding: 10px;
-        text-align: left;
-      }
-      th {
-        background-color: #f2f2f2;
-      }
-      tr:nth-child(even) {
-        background-color: #f9f9f9;
-      }
-      form label {
-        display: block;
-        margin-top: 10px;
-      }
-      form input,
-      form textarea {
-        width: 100%;
-        padding: 8px;
-        margin-top: 5px;
-        box-sizing: border-box;
-      }
-      form button {
-        margin-top: 10px;
-        padding: 10px 15px;
-        background-color: #333;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-      }
-      form button:hover {
-        background-color: #555;
-      }
-    </style>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <a href="">
-          <button type="button">About me</button>
+    <div id="TOP"></div>
+    <header class="kill">
+      <h1 class="welcome">Welcome to My portfolio</h1>
+      <div class="navbarr">
+        <a href="#ABOUT">
+          <button class="btn" type="button">About me</button>
         </a>
-        <a href="">
-          <button type="button">projects</button>
+        <a href="#SKILLS">
+          <button class="btn" type="button">Skills</button>
         </a>
-        <a href="">
-          <button type="button">education</button>
+        <a href="#PROJECTS">
+          <button class="btn" type="button">Projects</button>
         </a>
-        <a href="">
-          <button type="button">contact me</button>
+        <a href="#CONTACT">
+          <button class="btn" type="button">contact me</button>
         </a>
-      </nav>
-      <h1>
-        <marquee behavior="" direction="">Welcome to My portfolio</marquee>
-      </h1>
+      </div>
     </header>
     <main>
-      <section id="about me">
+      <section id="ABOUT" class="about me">
         <h1>SANTHOSH REDDY</h1>
-        <br />
-        <br />
         <img src="santhosh photo.png" alt="my photo" />
         <p>
-          i am a passionate web developer with a focus on front-end technology
+          I am a passionate web developer with a focus on front-end technology
         </p>
         <p>
-          I am currently studying a b tech 3 rd year student at
-          <i>audisankara college of engineering and technology</i>
+          I am currently studying B Tech 3 rd year student at
+          <a href="https://audisankaranlr.in/" target="_blank"
+            ><i>Audisankara College Of Engineering & Technology</i></a
+          >
         </p>
       </section>
-      <section id="skills">
+      <section id="SKILLS" class="skills">
         <h1>my skills</h1>
         <ol>
-          <li>python basics</li>
-          <li>html</li>
-          <li>css</li>
-          <li>java script</li>
+          <li>Python Basics</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Java Script</li>
           <li>c</li>
         </ol>
       </section>
-      <section id="projects">
+      <section id="PROJECTS" class="projects">
         <br /><br />
         <h1>My projects</h1>
         <table border="2px" cellpadding="10" cellspacing="0">
@@ -145,10 +59,13 @@
           </tr>
           <tr>
             <td>Portfolio</td>
-            <td>I have built my personal portfolio website using HTML</td>
+            <td>
+              I have built my personal portfolio website using HTML,CSS,Java
+              Script
+            </td>
           </tr>
           <tr>
-            <td>Simple python calculater</td>
+            <td>Simple python Calculater</td>
             <td>
               I have built the simple calculater by using the python language
             </td>
@@ -156,22 +73,22 @@
         </table>
       </section>
 
-      <section id="contact me">
+      <section id="CONTACT" class="contact me">
         <h1>contact me</h1>
         <p>Feel free to get in touch with me using the below:</p>
         <form action="">
-          <label for="name">name</label>
+          <label for="name">Name</label>
           <input
             type="text"
             id="name"
-            placeholder="enter your name"
+            placeholder="Enter your name"
             required
           /><br /><br />
           <label for="mail">Gmail</label>
           <input
             type="email"
             id="mail"
-            placeholder="enter your gmail"
+            placeholder="Enter your gmail"
             required
           /><br /><br />
 
@@ -179,25 +96,33 @@
           <textarea
             name="query"
             id="query"
-            placeholder="for any query please text me"
+            placeholder="For any query please text me"
           ></textarea>
           <br /><br />
-          <label for="gender">select your gender</label>
-          <input type="radio" id="male" value="male" />
-          <label for="male">male</label>
-          <input type="radio" id="female" value="female" />
-          <label for="female">female</label><br /><br />
 
-          <label for="">choose your intrest</label>
-          <input type="checkbox" id="coding" value="coding" />
-          <label for="coding">coding</label>
-          <input type="checkbox" id="reading" value="reading" />
-          <label for="reading">reading</label><br /><br />
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+          <div class="gender">
+            <p>Select your gender</p>
+            <input type="radio" id="male" name="gender" value="Male" />
+            <label for="male">Male</label><br />
+
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Female</label><br />
+          </div>
+          <div class="intrest">
+            <label for="">choose your intrest</label>
+            <input type="checkbox" id="coding" value="coding" />
+            <label for="coding">coding</label>
+            <input type="checkbox" id="reading" value="reading" />
+            <label for="reading">reading</label><br /><br />
+          </div>
+          <div class="sun">
+            <button type="submit" class="sub">Submit</button>
+            <button type="reset" class="sub">Reset</button>
+          </div>
         </form>
       </section>
     </main>
+    <a href="#TOP"> <button id="TOP" class="fixedbut">TOP</button> </a>
     <footer>
       <h3>&copy;copyright 2024</h3>
     </footer>
